@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Ежедневник</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <div class="tabs">
+
+            <ul class="tabs__caption">
+                <li class="active">Текущая дата</li>
+                <li>Календарь</li>
+                <li>Список задач на неделю</li>
+                <li>Список задач на текущую дату</li>
+            </ul>
+
+            <div class="tabs__content  active">
+                <div class="date-block">
+
+                    <div class="date1">
+                        <h2>Текущее время</h2>
+                        <div class="current-time"></div>
+                    </div>
+                    <div class="date2">
+                        <h2>Текущая дата</h2>
+                        <div class="current-date"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="tabs__content">
+                <h2>Календарь на месяц</h2>
+                <div class="calendar">
+                    <div class="calendar-header">
+                        <i class="fas fa-angle-left prev"></i>
+                        <div class="calendar-date">
+                            <h1 class="month"></h1>
+                            <h1 class="year"></h1>
+                        </div>
+                        <i class="fas fa-angle-right next"></i>
+                    </div>
+                    <!-- table is created here -->
+                </div>
+            </div>
+
+            <div class="tabs__content">
+                <center>
+                    <h2>Список задач на неделю</h2>
+                </center>
+                <div class="week-plan">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <span class="day">1</span>
+                                    <span class="long">Monday</span>
+                                </th>
+                                <th>
+                                    <span class="day">2</span>
+                                    <span class="long">Tuesday</span>
+                                </th>
+                                <th>
+                                    <span class="day">3</span>
+                                    <span class="long">Wednesday</span>
+                                </th>
+                                <th>
+                                    <span class="day">4</span>
+                                    <span class="long">Thursday</span>
+                                </th>
+                                <th>
+                                    <span class="day">5</span>
+                                    <span class="long">Friday</span>
+                                </th>
+                                <th>
+                                    <span class="day">6</span>
+                                    <span class="long">Saturday</span>
+                                </th>
+                                <th>
+                                    <span class="day">7</span>
+                                    <span class="long">Sunday</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="hour"><span>8:00</span></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                            </tr>
+                            <tr>
+                                <td class="hour"><span>10:00</span></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                            </tr>
+                            <tr>
+                                <td class="hour"><span>12:00</span></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                            </tr>
+                            <tr>
+                                <td class="hour"><span>14:00</span></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                            </tr>
+                            <tr>
+                                <td class="hour"><span>16:00</span></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                            </tr>
+                            <tr>
+                                <td class="hour"><span>18:00</span></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                            </tr>
+                            <tr>
+                                <td class="hour"><span>20:00</span></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                            </tr>
+                            <tr>
+                                <td class="hour"><span>22:00</span></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                                <td><textarea></textarea></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button id="clear" class="but">Очистить хранилище</button>
+                </div>
+            </div>
+
+            <div class="tabs__content">
+                <center><h2>Список задач на текущую дату</h2></center>
+                <div class="today-plan">
+                    <div class="cont">
+                        <div class="cal dark">
+                            <div class="calendar_header">
+                                <h1 class="header_title">Список задач</h1>
+                                <p class="header_copy"> План</p>
+                            </div>
+                            <div class="calendar_plan">
+                                <div class="cl_plan">
+                                    <div class="cl_title">Today</div>
+                                    <div class="cl_copy"></div>
+                                </div>
+                            </div>
+                            <div class="calendar_events">
+                                <p class="ce_title">Upcoming Events</p>
+                                <div class="event_item">
+                                    <div class="ei_Dot dot_active"></div>
+                                    <div class="ei_Title">8:00 am</div>
+                                    <div class="ei_Copy"></div>
+                                </div>
+                                <div class="event_item">
+                                    <div class="ei_Dot"></div>
+                                    <div class="ei_Title">10:00 pm</div>
+                                    <div class="ei_Copy"></div>
+                                </div>
+                                <div class="event_item">
+                                    <div class="ei_Dot"></div>
+                                    <div class="ei_Title">12:00 pm</div>
+                                    <div class="ei_Copy"></div>
+                                </div>
+                                <div class="event_item">
+                                    <div class="ei_Dot"></div>
+                                    <div class="ei_Title">14:00 am</div>
+                                    <div class="ei_Copy"></div>
+                                </div>
+                                <div class="event_item">
+                                    <div class="ei_Dot"></div>
+                                    <div class="ei_Title">16:00 am</div>
+                                    <div class="ei_Copy"></div>
+                                </div>
+                                <div class="event_item">
+                                    <div class="ei_Dot"></div>
+                                    <div class="ei_Title">18:00 am</div>
+                                    <div class="ei_Copy"></div>
+                                </div>
+                                <div class="event_item">
+                                    <div class="ei_Dot"></div>
+                                    <div class="ei_Title">20:00 am</div>
+                                    <div class="ei_Copy"></div>
+                                </div>
+                                <div class="event_item">
+                                    <div class="ei_Dot"></div>
+                                    <div class="ei_Title">22:00 am</div>
+                                    <div class="ei_Copy"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- .tabs -->
+
+    </div>  <!-- container -->
+   
+</body>
+<script src="script.js"></script>
+
+</html>
