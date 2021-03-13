@@ -2,4 +2,4 @@
 
 ![](/calendar.JPG)
 
-![]("/weekly planner.JPG")
+![](/weekly*planner.JPG)
